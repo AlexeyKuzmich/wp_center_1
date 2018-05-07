@@ -1,0 +1,25 @@
+To: tagoperator@gmail.com
+Subject: =?UTF-8?B?0J3QvtCy0YvQuSDRgdCw0LnRgiDQvdCwIFdvcmRQcmVzcw==?=
+X-PHP-Originating-Script: 0:class-phpmailer.php
+Date: Thu, 26 Apr 2018 10:14:02 +0000
+From: WordPress <wordpress@perinatalcenter-dnepr.com>
+Message-ID: <d3600472ae8f4cbcf04f5b268ded0fe4@perinatalcenter-dnepr.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Ваш новый сайт на WordPress успешно создан по адресу:
+
+http://perinatalcenter-dnepr.com
+
+Вы можете войти в панель управления со следующими координатами:
+
+Имя пользователя: perin
+Пароль: Пароль, выбранный вами при установке.
+Адрес для входа: http://perinatalcenter-dnepr.com/wp-login.php
+
+Мы надеемся, что вам понравится новый сайт. Спасибо!
+
+--Команда WordPress
+https://wordpress.org/

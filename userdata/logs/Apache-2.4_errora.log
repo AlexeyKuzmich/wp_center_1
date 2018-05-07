@@ -1,0 +1,13 @@
+[Mon May 07 09:55:12.510494 2018] [ssl:warn] [pid 3160:tid 604] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:12.511998 2018] [ssl:warn] [pid 3160:tid 604] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:12.710844 2018] [ssl:warn] [pid 3160:tid 604] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:12.711346 2018] [ssl:warn] [pid 3160:tid 604] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:14.037502 2018] [mpm_winnt:notice] [pid 3160:tid 604] AH00455: Apache/2.4.29 (Win32) OpenSSL/1.0.2n configured -- resuming normal operations
+[Mon May 07 09:55:14.038015 2018] [mpm_winnt:notice] [pid 3160:tid 604] AH00456: Apache Lounge VC11 Server built: Nov  6 2017 10:38:49
+[Mon May 07 09:55:14.038015 2018] [core:notice] [pid 3160:tid 604] AH00094: Command line: 'C:\\ospanel\\modules\\http\\Apache-2.4\\bin\\httpd.exe -d C:/OSPanel/modules/http/Apache-2.4 -f c:\\ospanel\\modules\\http\\Apache-2.4\\conf\\httpd.conf'
+[Mon May 07 09:55:14.051563 2018] [mpm_winnt:notice] [pid 3160:tid 604] AH00418: Parent: Created child process 3496
+[Mon May 07 09:55:14.378100 2018] [ssl:warn] [pid 3496:tid 568] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:14.379102 2018] [ssl:warn] [pid 3496:tid 568] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:14.487583 2018] [ssl:warn] [pid 3496:tid 568] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:14.488586 2018] [ssl:warn] [pid 3496:tid 568] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Mon May 07 09:55:14.505763 2018] [mpm_winnt:notice] [pid 3496:tid 568] AH00354: Child: Starting 32 worker threads.

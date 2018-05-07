@@ -1,0 +1,22 @@
+To: tagoperator@gmail.com
+Subject: =?UTF-8?B?W9CU0L3QtdC/0YDQvtC/0LXRgtGA0L7QstGB0LrQuNC5INCf0LXRgNC40L0=?=  =?UTF-8?B?0LDRgtCw0LvRjNC90YvQuSDRhtC10L3RgtGAXSDQndC+0LLRi9C5INC/0LA=?=  =?UTF-8?B?0YDQvtC70Yw=?=
+X-PHP-Originating-Script: 0:class-phpmailer.php
+Date: Mon, 7 May 2018 07:20:04 +0000
+From: WordPress <wordpress@perinatalcenter-dnepr.com>
+Message-ID: <3dcf88439500a587635f87254a646de7@perinatalcenter-dnepr.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Кто-то запросил сброс пароля для следующей учётной записи:
+
+Название сайта: Днепропетровский Перинатальный центр
+
+Имя пользователя: perin
+
+Если произошла ошибка, просто проигнорируйте это письмо, и ничего не произойдёт.
+
+Чтобы сбросить пароль, перейдите по следующей ссылке:
+
+<http://perinatalcenter-dnepr.com/wp-login.php?action=rp&key=JQod2k93xiVArxWVKMLL&login=perin>
