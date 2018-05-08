@@ -1,19 +1,19 @@
 
 jQuery(document).ready(function($) {
 
-     function sliderHeightDetect() {
-      var sliderHeight = $(window).height() - $("header").height() - $("nav").height();
-      $(".owl-mainSlider .item").css("height", sliderHeight);
-    };
+ function sliderHeightDetect() {
+  var sliderHeight = $(window).height() - $("header").height() - $("nav").height();
+  $(".owl-mainSlider .item").css("height", sliderHeight);
+};
 
 
-// adaptive menu
-function adjustMenu() {
-  var ww = $(window).width(),
-  $directionItem = $(".direction .item"),
-  $scheduleInner = $(".schedule .inner"),
-  $scrollBlock = $(".scrollBlock"),
-  $counter = 0;
+  // adaptive menu
+  function adjustMenu() {
+    var ww = $(window).width(),
+    $directionItem = $(".direction .item"),
+    $scheduleInner = $(".schedule .inner"),
+    $scrollBlock = $(".scrollBlock"),
+    $counter = 0;
 
   if (ww < 751) { // = 768 - 17 (verticasl scroll width)
     $(".toggleMenu").css("display", "block");
@@ -95,55 +95,75 @@ function adjustMenu() {
 }
 
 
-// EqualHeight
-function setEqualHeight(columns) {
-  var tallestColumn = 0;
-  columns.each(function() {
-    columns.removeAttr("style");
-    currentHeight = $(this).height();
-    if ( currentHeight > tallestColumn ) {
-      tallestColumn = currentHeight;
-    }
-  });
-  columns.height( tallestColumn );
-}
-
-
-
-// parallaxImage loading depending on screen size
-function imageSizeDetect() {
-  var ww = $(window).width(),
-  imageSize = "";
-  if (ww <= 599) {
-    imageSize = "sm";
-  } else if (ww > 600 && ww <= 992) {
-    imageSize = "md";
-  } else if (ww > 993) {
-    imageSize = "lg";
+  // EqualHeight
+  function setEqualHeight(columns) {
+    var tallestColumn = 0;
+    columns.each(function() {
+      columns.removeAttr("style");
+      currentHeight = $(this).height();
+      if ( currentHeight > tallestColumn ) {
+        tallestColumn = currentHeight;
+      }
+    });
+    columns.height( tallestColumn );
   }
-  return imageSize;
-}
+
+
+
+  // parallaxImage loading depending on screen size
+  function imageSizeDetect() {
+    var ww = $(window).width(),
+    imageSize = "";
+    if (ww <= 599) {
+      imageSize = "sm";
+    } else if (ww > 600 && ww <= 992) {
+      imageSize = "md";
+    } else if (ww > 993) {
+      imageSize = "lg";
+    }
+    return imageSize;
+  }
 
 
 
 
 
+  // preload
+  var preload = 15;
 
-var preload = 15;
-
-(function () {      
-  $(".greeting").css("opacity", 1);
-  $("#preload")
-  .delay(preload)
-  .fadeOut(preload);
-})();
-
-
+  (function () {      
+    $(".greeting").css("opacity", 1);
+    $("#preload")
+    .delay(preload)
+    .fadeOut(preload);
+  })();
 
 
 
 
-/*var ww = document.body.clientWidth;*/
+
+  // search form
+  (function () {
+    var $search = $(".topInfo .search-icon"),
+        $searchBlock = $(".topInfo .search-block"),
+        $close = $(".topInfo .close-icon");
+
+    $search.on('click', function() {
+      $searchBlock.toggleClass("activeSearch");
+      $(this).hide();
+    });
+
+    $close.on('click', function() {
+      $searchBlock.toggleClass("activeSearch");
+      $search.show();
+      $("#s").val('');
+    });
+  })();
+
+
+
+
+
   // navigation
   (function () {
     var $navRef = $(".nav li a");
@@ -153,10 +173,6 @@ var preload = 15;
       }
     });
   })();
-
-
-
-
 
 
   // tab lighting

@@ -64,14 +64,30 @@
 
 <header class="container-fluid">
   <div class="row clearfix topInfo">
-    <div>
+
+    <div class="logo">
       <a href="http://perinatalcenter-dnepr.com">Дніпропетровський<br /><span>Перинатальний центр</span></a>
     </div>
-    <div>
+
+    <div class="topContacts">
       <a href="tel:+380562685060">+38 0562 68 50 60</a>
       <a href="tel:+380562685060">+38 0562 68 50 60</a>
       <a href="mailto:dmpb2_glvr@ukr.net"><span>e-mail: </span>напишiть нам</a>
     </div>
+    
+    <span class="glyphicon glyphicon-search search-icon"></span>
+
+    <div class="search-block">
+      <div class="search-inner">
+      <span class="glyphicon glyphicon-remove close-icon"></span>
+        <form role="search" method="get" id="searchform" action="#">
+          <input id="s" type="text" placeholder="Пошук..." name="s" value="">
+          <span id="searchsubmit" class="glyphicon glyphicon-search" type="submit" value=""></span>
+        </form>
+      </div>
+    </div>
+
+
   </div>
 </header>
 
