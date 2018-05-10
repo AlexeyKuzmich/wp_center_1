@@ -1,6 +1,6 @@
 /* Theme Name: Днепропетровский Перинатальный центр
 Theme; URI: https://perinatalcenter-dnepr.com
-Description: Перинатальный центр на Космической Днепропетровск
+Description: Перинатальный центр на Космической Днепропетровск.
 Author: Alex
 Version: 1.0 */
 
@@ -297,7 +297,7 @@ header {
   display: block;
   position: absolute;
   top: -80px;
-  right: 0px;
+  right: 12px;
   font-size: 40px;
   cursor: pointer;
   transition: .3s;
@@ -330,7 +330,7 @@ header {
   margin-bottom: 10px;
   background-color: transparent;
   border: none;
-  transition: 1s;
+  transition: 1.5s;
 }
 
 .topInfo .search-inner input[type="text"]:focus {
@@ -345,11 +345,18 @@ header {
   right: 15px;
   font-size: 30px;
   cursor: pointer;
+  transition: .3s;
 }
 
-.topInfo .close-icon:hover,
 #searchsubmit:hover {
-  color: #499FFF;
+  /* color: #499FFF; */
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.topInfo .close-icon:hover {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 #s::-webkit-input-placeholder {
@@ -705,7 +712,7 @@ nav .nav .menu a:focus {
 
 /*************** PARALLAX ***************/
 .parallax-window {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   min-height: 600px;
   padding: 100px 0 50px 0;
   background: transparent;
@@ -1357,7 +1364,6 @@ footer canvas {
   }
   .topInfo .close-icon {
     top: -60px;
-    right: 20px;
     font-size: 30px;
   }
   .topInfo .search-inner {

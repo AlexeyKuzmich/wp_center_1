@@ -11,7 +11,7 @@
 <section>
   <div class="container">
     <div class="row direction">
-      <!-- <hr class="hrStyle hidden-xs"> -->
+      <h1>Напрямки діяльності</h1>
       <h1><?php echo get_cat_name(2); ?></h1>
       <div class="col-sm-4">
         <a href="http://www.cps.org.ua" target="_blank">
@@ -46,16 +46,16 @@
 <section class="headPhysician coloredSection">
   <div class="container">
     <div class="row">
-      <h1><?php echo get_cat_name(3); ?></h1>
+      <h1><?php echo get_cat_name(7); ?></h1>
 
-      <?php if ( have_posts() ) : query_posts('p=7');
+      <?php if ( have_posts() ) : query_posts('p=97');
       while (have_posts()) : the_post(); ?>
       <div class="col-sm-5">
         <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
       </div>
       <div class="col-sm-7">
         <?php the_content(); ?>
-        <h3 class="text-right"><?php echo get_post_meta( 7, 'signature', true ); ?></h3>
+        <h3 class="text-right"><?php echo get_post_meta( 97, 'p_signature', true ); ?></h3>
       </div>
       <?php endwhile; endif; wp_reset_query(); ?>
 
@@ -67,18 +67,19 @@
 <!-- owlcarousel -->
 <section>
   <div class="container">
-    <!-- <hr class="hrStyle hidden-xs"> -->
-    <h1><?php echo get_cat_name(4); ?></h1>
+    <h1><?php echo get_cat_name(8); ?></h1>
     <div class="owl-carousel owl-doctors grabbable">
 
-      <?php if ( have_posts() ) : query_posts('cat=4');
-      while (have_posts()) : the_post(); ?>      
+      <?php if ( have_posts() ) : query_posts('cat=8');
+      while (have_posts()) : the_post(); ?> 
+
       <div class="item">
         <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
         <h3><?php the_title(); ?></h3>
-        <p><?php echo get_post_meta( 14, 'position', true ); ?></p>
-        <a href="<?php bloginfo('template_url'); ?>/maltseva.html">Докладнiше</a>
+        <p><?php echo get_post_meta( $post->ID, 'department', true ); ?></p>
+        <a href="<?php echo get_post_meta( $post->ID, 'page_link', true ); ?>">Докладнiше</a>
       </div>
+
       <?php endwhile; endif; wp_reset_query(); ?>
 
     </div>
@@ -87,12 +88,12 @@
 <!-- / owlcarousel -->
 
 <!-- parallax -->
-<!-- <div class="parallax-window">
+<div class="parallax-window">
   <div class="container">
     <div class="row">
       <div class="col-sm-6 parrallax-inner">
         <span class="glyphicon glyphicon-thumbs-up"></span>
-        <h2>підтримка грудного вигодовування</h2>
+        <h2>ПІДТРИМКА ГРУДНОГО ВИГОДОВУВАННЯ</h2>
         <p>Ми живемо в світі, де люди та спільноти можуть миттєво контактувати один з одним, незважаючи на відстань. Кожен день створюються нові можливості для спілкування, і ми можемо використовувати ці інформаційні канали, щоб розширювати наші горизонти і поширювати інформацію та досвід про грудне вигодовування, незважаючи на відстані.</p>
       </div>
       <div class="col-sm-6 parrallax-inner">
@@ -114,21 +115,24 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <section class="descriptionText">
   <div class="container">
-      <h1>опис закладу</h1>
+
+
+
+      <h1><?php echo get_cat_name(6); ?></h1>
       <div>
-        <p>Комунальний заклад «Дніпропетровський обласний перинатальний центр зі стаціонаром» Дніпропетровської обласної ради», є заклад охорони здоров’я, в якому передбачається надання високоспеціалізованої медичної допомоги в умовах цілодобового стаціонару, денного стаціонару та амбулаторних умовах,  переважно, найбільш важкому контингенту вагітних, роділь, породіль, новонароджених дітей, а також жінкам з порушенням репродуктивної функції, що потребують високої інтенсивності лікування та догляду на основі використання новітніх технологій з доведеною ефективністю.</p>
-        <p>Цей медичній заклад, продовжує більш ніж 25-річну славну історію плідної праці на благо жінки та дитини. Дніпропетровського міського пологового будинку № 2.</p>
-        <p>У 2012 році наш лікувальний заклад вийшов на новий рівень. В рамках Національного проекту «Нове життя – нова якість материнства та дитинства» його було реорганізовано в Комунальний заклад «Обласний перинатальний центр зі стаціонаром» Дніпропетровської обласної ради». Для цього був проведений  капітальний ремонт будівлі та приміщень, встановлено нове сучасне обладнання. І тепер центр гостинно відчинив свої двері для жінок всього Дніпропетровського регіону, маючи змогу надати їм медичну допомогу, без перебільшення, на найсучаснішому світовому рівні, як того вимагають реалії сьогодення.</p>
+        <p><?php echo category_description(6); ?></p>
         <button>Розгорнути</button>
       </div>
+
+
   </div>
 </section>
 
-<section class="feedback coloredSection">
+<!-- <section class="feedback coloredSection">
   <div class="container">
     <h1>запис на консультацію</h1>
     <h3><span>Будь ласка, залиште свої контактні дані і ми зв'яжемося з вами найближчим часом</span></h3>
@@ -144,6 +148,6 @@
       </div>
     </form>
   </div>
-</section>
+</section> -->
 
 <?php get_footer(); ?>

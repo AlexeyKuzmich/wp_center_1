@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Шаблон страницы отделения
+Template Name: Страница отделения
 */
 ?>
 
@@ -9,7 +9,7 @@ Template Name: Шаблон страницы отделения
 <!-- owlcarousel -->
 <section>
   <div class="container">
-    <!-- <hr class="hrStyle hidden-xs"> -->
+
     <h1><?php echo get_cat_name(4); ?></h1>
     <div class="owl-carousel owl-doctors grabbable">
 
