@@ -64,29 +64,6 @@
 </section>
 <!--/ headPhysician -->
 
-<!-- owlcarousel -->
-<section>
-  <div class="container">
-    <h1><?php echo get_cat_name(8); ?></h1>
-    <div class="owl-carousel owl-doctors grabbable">
-
-      <?php if ( have_posts() ) : query_posts('cat=8');
-      while (have_posts()) : the_post(); ?> 
-
-      <div class="item">
-        <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
-        <h3><?php the_title(); ?></h3>
-        <p><?php echo get_post_meta( $post->ID, 'department', true ); ?></p>
-        <a href="<?php echo get_post_meta( $post->ID, 'page_link', true ); ?>">Докладнiше</a>
-      </div>
-
-      <?php endwhile; endif; wp_reset_query(); ?>
-
-    </div>
-  </div>
-</section>
-<!-- / owlcarousel -->
-
 <!-- parallax -->
 <div class="parallax-window">
   <div class="container">
@@ -120,14 +97,11 @@
 <section class="descriptionText">
   <div class="container">
 
-
-
-      <h1><?php echo get_cat_name(6); ?></h1>
-      <div>
-        <p><?php echo category_description(6); ?></p>
-        <button>Розгорнути</button>
-      </div>
-
+    <h1><?php echo get_cat_name(6); ?></h1>
+    <div>
+      <p><?php echo category_description(6); ?></p>
+      <button>Розгорнути</button>
+    </div>
 
   </div>
 </section>

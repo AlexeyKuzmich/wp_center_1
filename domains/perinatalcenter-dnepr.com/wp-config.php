@@ -86,3 +86,6 @@ if ( !defined('ABSPATH') )
 
 /** Инициализирует переменные WordPress и подключает файлы. */
 require_once(ABSPATH . 'wp-settings.php');
+
+// TRASH
+DEFINE (‘EMPTY_TRASH_DAYS’, 30);

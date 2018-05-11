@@ -818,10 +818,17 @@ nav .nav .menu a:focus {
   transition: .3s;
 }
 
+
 .deparmentContacts a {
-  display: inline-block;
+
+  padding-right: 10px;
+
+}
+
+.deparmentContacts p {
   color: #446CB3;
   padding-right: 10px;
+  text-align: center;
 }
 
 .deparmentContacts a:hover {

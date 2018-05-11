@@ -380,16 +380,16 @@ jQuery(document).ready(function($) {
 
 
   //*************** PAGES **************************************
-  (function() {
+/*  (function() {
     var $main = $("main"),
     pageMark = "";
     if ( $main.attr("class") ) { 
       pageMark = $main.attr("class");
       console.log( "pageMark = " + pageMark );
-      /*$("." + pageMark + " .departmentImg img").attr("src", "images/" + pageMark + "/" + imageSizeDetect() + ".jpg");*/
+      $("." + pageMark + " .departmentImg img").attr("src", "images/" + pageMark + "/" + imageSizeDetect() + ".jpg");
       $("." + pageMark + " .departmentImg img").attr("src", "wp-content/themes/perinatalcenter-dnepr.com/images/" + pageMark + "/" + imageSizeDetect() + ".jpg");
     }
-  })();
+  })();*/
   //*************** / PAGES ************************************
 
 

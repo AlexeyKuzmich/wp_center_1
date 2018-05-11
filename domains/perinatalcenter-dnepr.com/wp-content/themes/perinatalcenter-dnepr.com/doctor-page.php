@@ -28,9 +28,7 @@ Template Name: Cтраница доктора
       <div class="col-md-12">
 
         <?php while( have_posts() ) : the_post(); 
-          $more = 1; // отображаем полностью всё содержимое поста
-          the_title(); // эта функция выводит заголовок
-          the_content(); // выводим контент
+          the_content();
         endwhile; ?>
 
       </div>
