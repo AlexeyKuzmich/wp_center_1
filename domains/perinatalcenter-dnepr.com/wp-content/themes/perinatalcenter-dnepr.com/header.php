@@ -71,7 +71,7 @@
   <div class="row clearfix topInfo">
 
     <div class="logo">
-      <a href="http://perinatalcenter-dnepr.com">Дніпропетровський<br /><span>Перинатальний центр</span></a>
+      <a href="http://perinatalcenter-dnepr.com/">Дніпропетровський<br /><span>Перинатальний центр</span></a>
     </div>
 
     <div class="topContacts">
