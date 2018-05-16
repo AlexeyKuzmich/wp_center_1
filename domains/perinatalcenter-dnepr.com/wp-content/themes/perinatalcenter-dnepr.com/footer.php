@@ -61,6 +61,7 @@
       </div>
 
     </div><!-- row -->
+    <p class="text-center"><small>&copy; <?php echo date(Y); ?> Днiпропетровский Перинатальный центр</small></p>
   </div><!-- container -->
 </footer>
 

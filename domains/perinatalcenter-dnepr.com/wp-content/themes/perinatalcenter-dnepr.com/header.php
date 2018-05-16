@@ -98,7 +98,7 @@
 
 <nav>
   <div class="container-fluid">
-    <a class="toggleMenu" href="#"><img src="<?php bloginfo('template_url') ?>/images/toggleMenu.png" width="256" height="256" alt="toggleMenu" /></a>
+    <a class="toggleMenu" href="#"><img src="<?php bloginfo('template_url') ?>/images/toggleMenu.png" width="50" height="50" alt="toggleMenu" /></a>
     <ul class="nav">
 
       <?php wp_nav_menu( array('theme_location' => 'menu') ); ?>

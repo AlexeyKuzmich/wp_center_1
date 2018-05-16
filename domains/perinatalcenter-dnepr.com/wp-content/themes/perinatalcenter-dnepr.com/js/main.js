@@ -10,10 +10,20 @@ jQuery(document).ready(function($) {
   // adaptive menu
   function adjustMenu() {
     var ww = $(window).width(),
-    $directionItem = $(".direction .item"),
-    $scheduleInner = $(".schedule .inner"),
-    $scrollBlock = $(".scrollBlock"),
-    $counter = 0;
+        $nav = $("nav"),
+        $directionItem = $(".direction .item"),
+        $scheduleInner = $(".schedule .inner"),
+        $scrollBlock = $(".scrollBlock"),
+        $counter = 0;
+
+  // topInfo scroll
+  $(window).scroll(function() {
+    if ( $(this).scrollTop() > 147 ) {
+      $scrollBlock.show();
+    } else {
+      $scrollBlock.hide();
+    }
+  });
 
   if (ww < 751) { // = 768 - 17 (verticasl scroll width)
     $(".toggleMenu").css("display", "block");
@@ -59,13 +69,10 @@ jQuery(document).ready(function($) {
 
     // topInfo scroll
     $(window).scroll(function() {
-      var $nav = $("nav");
       if ( $(this).scrollTop() > 147 ) {
         $nav.addClass("fixedMenu");
-        $scrollBlock.show();
       } else {
         $nav.removeClass("fixedMenu");
-        $scrollBlock.hide();
       }
     });
     
@@ -114,11 +121,11 @@ jQuery(document).ready(function($) {
   function imageSizeDetect() {
     var ww = $(window).width(),
     imageSize = "";
-    if (ww <= 599) {
+    if (ww <= 575) {
       imageSize = "sm";
-    } else if (ww > 600 && ww <= 992) {
+    } else if (ww > 575 && ww <= 992) {
       imageSize = "md";
-    } else if (ww > 993) {
+    } else if (ww > 992) {
       imageSize = "lg";
     }
     return imageSize;
@@ -422,9 +429,7 @@ jQuery(document).ready(function($) {
              }
            });
       });
-
-
-
+  
 });
 
 

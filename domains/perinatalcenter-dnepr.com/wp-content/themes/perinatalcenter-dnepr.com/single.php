@@ -3,16 +3,27 @@
 <div class="container">
   <div class="row">
     <div class="col-md-9">
-      <section class="post_output">
+      <section class="category_item">
 
       	<?php while( have_posts() ) : the_post(); ?>
       		<?php $more = 1; ?>
-      		<h2><?php the_title(); ?></h2>
-      		
-      		<?php the_time('j M Y') ?>
-          <br />
-            
-      		<?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
+
+          <h2 class="text-left"><?php the_title(); ?></h2>
+
+      		<div class="blog-info clearfix">
+            <div class="author_field">
+              <p class="author">
+                <?php the_author(); ?>
+                <?php the_time('j M Y'); ?>
+              </p>
+              <p class="comment"><?php comments_popup_link('0', '1', '%'); ?></p>
+            </div>
+
+          </div>
+            <?php if ( has_post_thumbnail()) { ?>
+                <?php the_post_thumbnail('full', array('class' => 'img-responsive')); ?>
+            <?php } ?>
+
       		<?php the_content(); ?>
       	<?php endwhile; ?>
 

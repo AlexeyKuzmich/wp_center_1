@@ -15,6 +15,8 @@ function style_script_load() {
 }
 add_action( 'wp_enqueue_scripts', 'style_script_load' );
 
+
+
 // админпанель
 show_admin_bar(false);
 
@@ -26,3 +28,4 @@ add_theme_support( 'menus' );
 
 // вывод меню
 register_nav_menu( 'menu', 'Main menu' );
+
