@@ -79,18 +79,21 @@
       <a href="tel:+380562685060">+38 0562 68 50 60</a>
       <a href="mailto:dmpb2_glvr@ukr.net"><span>e-mail: </span>напишiть нам</a>
     </div>
-    
-    <span class="glyphicon glyphicon-search search-icon"></span>
 
-    <div class="search-block">
-      <div class="search-inner">
-      <span class="glyphicon glyphicon-remove close-icon"></span>
-        <form role="search" method="get" id="searchform" action="#">
-          <input id="s" type="text" placeholder="Пошук..." name="s" value="">
-          <span id="searchsubmit" class="glyphicon glyphicon-search" type="submit" value=""></span>
+
+      <span class="glyphicon glyphicon-search search-icon" title="Пошук..."></span>
+
+      <div class="search-block">
+        <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+          <span class="glyphicon glyphicon-remove close-icon"></span>
+
+          <input required type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Пошук …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Пошук:', 'label' ) ?>" />
+
+          <input id="search_submit_ID" type="submit" class="search-submit" value="<?php echo esc_attr_x( '', 'submit button' ) ?>" />
+          <label for="search_submit_ID"><span class="glyphicon glyphicon-search"></span></label>
+
         </form>
       </div>
-    </div>
 
 
   </div>
@@ -100,9 +103,7 @@
   <div class="container-fluid">
     <a class="toggleMenu" href="#"><img src="<?php bloginfo('template_url') ?>/images/toggleMenu.png" width="50" height="50" alt="toggleMenu" /></a>
     <ul class="nav">
-
       <?php wp_nav_menu( array('theme_location' => 'menu') ); ?>
-
     </ul>
   </div>
 </nav>

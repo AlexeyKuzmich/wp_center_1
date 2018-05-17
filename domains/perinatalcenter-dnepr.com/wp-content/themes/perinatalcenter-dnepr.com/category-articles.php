@@ -14,21 +14,11 @@ Template Name: Cтраница Статей
         $wp_query = new WP_Query('cat=-1,-5,-6,-7,-8,-10,-11,-13&paged=' . $paged);
         while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-          <div class="row category_item">            
+          <div class="row category_item">
 
-            <div class="col-sm-8 col-md-8 pull-right">
-              <div class="blog-info clearfix">
+            <div class="col-xs-12">
                 <h2 class="text-left"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <div class="author_field">
-                  <p class="author">
-                    <?php the_author(); ?>
-                    <?php the_time('j M Y'); ?>
-                  </p>
-                  <p class="comment"><?php comments_popup_link('0', '1', '%'); ?></p>
-                </div>
-              </div>              
-              <div class="read-more"><?php the_content('Дiзнатись бiльше...'); ?></div>
-            </div>
+              </div>
 
             <div class="col-sm-4 col-md-4">
               <?php if ( has_post_thumbnail()) { ?>
@@ -40,10 +30,24 @@ Template Name: Cтраница Статей
               <?php } ?>
             </div>
 
+            <div class="col-sm-8 col-md-8 pull-right">
+              <div class="blog-info clearfix">
+                <div class="author_field">
+                  <p class="author">
+                    <?php the_author(); ?>
+                    <?php the_time('j M Y'); ?>
+                  </p>
+                  <p class="comment"><?php comments_popup_link('0', '1', '%'); ?></p>
+                </div>
+              </div>              
+              <div class="read-more"><?php the_content('Дiзнатись бiльше...'); ?></div>
+            </div>            
+
           </div>
 
-        <?php endwhile;
-        if (function_exists('wp_pagenavi')) { wp_pagenavi(); }
+        <?php endwhile; ?>
+        
+        <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); }
         $wp_query = null; $wp_query = $temp; ?>
 
       </section>

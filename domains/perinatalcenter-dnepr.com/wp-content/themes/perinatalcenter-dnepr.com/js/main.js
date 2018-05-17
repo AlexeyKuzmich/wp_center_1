@@ -151,20 +151,24 @@ jQuery(document).ready(function($) {
 
   // search form
   (function () {
-    var $search = $(".topInfo .search-icon"),
-        $searchBlock = $(".topInfo .search-block"),
-        $close = $(".topInfo .close-icon");
+    var $search = $(".search-icon"),
+        $searchBlock = $(".search-block"),
+        $close = $(".search-block .close-icon")
 
     $search.on('click', function() {
-      $searchBlock.toggleClass("activeSearch");
-      $(this).hide();
+      $searchBlock.css({
+        "top" : 0,
+        "opacity" : 1
+      })
     });
 
     $close.on('click', function() {
-      $searchBlock.toggleClass("activeSearch");
-      $search.show();
-      $("#s").val('');
-    });
+     $searchBlock.css({
+      "top" : "-100%",
+      "opacity" : 0
+    })
+     $('.search-block input[type="search"]').val('');
+   });
   })();
 
 
