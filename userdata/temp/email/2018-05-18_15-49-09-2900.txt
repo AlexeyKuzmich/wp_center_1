@@ -1,0 +1,25 @@
+To: tagoperato@gmail.com
+Subject: =?UTF-8?B?W9CU0L3QtdC/0YDQvtC/0LXRgtGA0L7QstGB0LrQuNC5INCf0LXRgNC40L0=?=  =?UTF-8?B?0LDRgtCw0LvRjNC90YvQuSDQptC10L3RgtGAXSDQn9GA0L7QstC10YDRjNGC?=  =?UTF-8?B?0LUsINC/0L7QttCw0LvRg9C50YHRgtCwOiAiVGhlIG5ld2VzdCBu?=  =?UTF-8?B?ZXdzIg==?=
+X-PHP-Originating-Script: 0:class-phpmailer.php
+Date: Fri, 18 May 2018 12:49:09 +0000
+From: WordPress <wordpress@perinatalcenter-dnepr.com>
+Message-ID: <b9a3a9be70e93b30ad2d79d1c2d88f11@perinatalcenter-dnepr.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Новый комментарий к записи "The newest news" ожидает проверки
+http://perinatalcenter-dnepr.com/the-newest-news/
+
+Автор: Alex (IP адрес: 127.0.0.1, admin)
+E-mail: tagoperator@gmail.com
+URL: 
+Комментарий: 
+no-logged comment
+
+Одобрить: http://perinatalcenter-dnepr.com/wp-admin/comment.php?action=approve&c=8#wpbody-content
+В корзину: http://perinatalcenter-dnepr.com/wp-admin/comment.php?action=trash&c=8#wpbody-content
+Спам: http://perinatalcenter-dnepr.com/wp-admin/comment.php?action=spam&c=8#wpbody-content
+В настоящее время ожидает проверки 1 комментарий. Пожалуйста, посетите панель модерирования:
+http://perinatalcenter-dnepr.com/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content

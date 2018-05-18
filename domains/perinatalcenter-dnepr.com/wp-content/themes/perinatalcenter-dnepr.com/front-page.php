@@ -106,7 +106,7 @@
   </div>
 </section>
 
-<!-- <section class="feedback coloredSection">
+<section class="feedback coloredSection">
   <div class="container">
     <h1>запис на консультацію</h1>
     <h3><span>Будь ласка, залиште свої контактні дані і ми зв'яжемося з вами найближчим часом</span></h3>
@@ -122,6 +122,6 @@
       </div>
     </form>
   </div>
-</section> -->
+</section>
 
 <?php get_footer(); ?>

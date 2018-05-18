@@ -1,11 +1,28 @@
 <?php get_header(); ?>
 
-<h1 style="color: red;">SEARCH-PAGE</h1>
-
 <div class="container">
   <div class="row">
     <div class="col-md-9">
-      <section>        
+      <section class="search_page">
+        <div class="row">
+          <div class="col-sm-12">
+              <h3><span class="glyphicon glyphicon-search"></span>
+                <?php $allsearch = &new WP_Query("s=$s&showposts=-1");
+                $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e('');
+                echo $count . ' ';
+                _e('результатiв'); wp_reset_query(); ?>
+                для <span><?php echo get_search_query(); ?></span>
+              </h3>
+            <div class="search-block-page">
+              <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Пошук …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Пошук:', 'label' ) ?>" required autofocus />
+                <input id="search_submit_page_ID" type="submit" class="search-submit" value="<?php echo esc_attr_x( '', 'submit button' ) ?>" />
+                <label for="search_submit_page_ID"><span class="glyphicon glyphicon-search"></span></label>
+              </form>
+            </div>
+          </div>
+        </div>
+
         <?php if ( have_posts() ) : 
         while (have_posts()) : the_post(); ?>
 
@@ -41,7 +58,16 @@
           </div>
         <?php endwhile; ?>
         <?php else : ?>
-          <h1>ничего нет !!!</h1>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="no_result">
+                <h2>По вашому запиту нічого не знайдено</h2>
+                <h3 class="text-left">Рекомендації з пошуку</h3>
+                <p>1. Використовуйте синоніми</p>
+                <p>2. Використовуйте більше ключових слів</p>
+              </div>
+            </div>
+          </div>
         <?php endif; ?>
 
         <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); }

@@ -1,6 +1,2 @@
-[17-May-2018 09:37:58 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-content\themes\perinatalcenter-dnepr.com\tag.php on line 35
-[17-May-2018 11:00:54 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-content\themes\perinatalcenter-dnepr.com\search.php on line 31
-[17-May-2018 11:04:26 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-content\themes\perinatalcenter-dnepr.com\search.php on line 31
-[17-May-2018 11:05:07 UTC] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-content\themes\perinatalcenter-dnepr.com\search.php on line 31
-[17-May-2018 11:07:30 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-content\themes\perinatalcenter-dnepr.com\search.php on line 46
-[17-May-2018 11:42:52 UTC] PHP Parse error:  syntax error, unexpected 'endwhile' (T_ENDWHILE) in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-content\themes\perinatalcenter-dnepr.com\search.php on line 51
+[18-May-2018 06:06:04 UTC] PHP Fatal error:  Call to a member function get() on a non-object in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-includes\query.php on line 28
+[18-May-2018 07:45:02 UTC] PHP Fatal error:  Call to a member function get() on a non-object in C:\OSPanel\domains\perinatalcenter-dnepr.com\wp-includes\query.php on line 28

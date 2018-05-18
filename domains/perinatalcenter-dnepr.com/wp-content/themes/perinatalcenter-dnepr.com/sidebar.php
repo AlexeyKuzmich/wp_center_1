@@ -1,5 +1,9 @@
 <div class="col-md-3 side_bar">
- 	<div class="myDiv" style="padding: 50px 10px; background-color: #fafafa; font-size: 18px; color: red;">
- 		<p>this is SIDEBAR</p>
- 	</div>
+	<section>
+		<?php if ( is_active_sidebar( 'right_sidebar' ) ) : ?> 
+		<div class="sidebar"> 
+			<?php dynamic_sidebar( 'right_sidebar' ); ?> 
+		</div> 
+	<?php endif; ?>
+	</section>
 </div>

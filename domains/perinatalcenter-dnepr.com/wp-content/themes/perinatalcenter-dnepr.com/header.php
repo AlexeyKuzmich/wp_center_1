@@ -87,7 +87,7 @@
         <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
           <span class="glyphicon glyphicon-remove close-icon"></span>
 
-          <input required type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Пошук …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Пошук:', 'label' ) ?>" />
+          <input type="search" class="search-field" placeholder="<?php echo esc_attr_x( 'Пошук …', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Пошук:', 'label' ) ?>" required autofocus />
 
           <input id="search_submit_ID" type="submit" class="search-submit" value="<?php echo esc_attr_x( '', 'submit button' ) ?>" />
           <label for="search_submit_ID"><span class="glyphicon glyphicon-search"></span></label>

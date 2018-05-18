@@ -39,6 +39,8 @@
             <p><?php next_post_link( '%link', '%title >', true ); ?></p>
           </div>
         </div>
+        
+        <?PHP comments_template(); ?>
 
       </section>
     </div>

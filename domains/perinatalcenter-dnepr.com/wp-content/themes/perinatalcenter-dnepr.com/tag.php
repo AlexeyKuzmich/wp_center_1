@@ -30,6 +30,7 @@
           <?php } ?>
 
           <?php the_content(); ?>
+                    <div class="tags"><?php the_tags('<span>Схожі категорії: </span>', ' '); ?></div>
         <?php endwhile; ?>
 
         <?php
