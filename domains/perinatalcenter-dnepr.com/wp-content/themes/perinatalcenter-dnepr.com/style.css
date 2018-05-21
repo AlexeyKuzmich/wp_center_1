@@ -1239,6 +1239,10 @@ footer p:last-child {
   padding: 0;
 }
 
+.person .personImg img {
+  max-width: 450px;
+}
+
 .person .row {
   background: #446CB3;
 }
@@ -1268,7 +1272,7 @@ footer p:last-child {
 }
 
 .person .persontext {
-  padding: 5em 4em;
+  padding: 3em 3em 2em 3em;
 }
 /* / PERSON */
 /*************** / PAGES **************************************/
@@ -2013,7 +2017,7 @@ textarea:focus:required:valid {
     height: 100%;
   }
   section {
-    padding: 0 0 20px 0;
+    padding: 20px 0 20px 0;
   }
   h1,
   .person h1,

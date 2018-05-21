@@ -35,10 +35,6 @@
             <div class="col-sm-4 col-md-4">
               <?php if ( has_post_thumbnail()) { ?>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?></a>
-              <?php } else { ?>
-                <a href="<?php the_permalink(); ?>">
-                  <img class="img-responsive text-left" src="<?php bloginfo('template_url'); ?>/images/no_image.jpg" alt="no_image" width="300" height="300" />
-                </a>
               <?php } ?>
             </div>
 

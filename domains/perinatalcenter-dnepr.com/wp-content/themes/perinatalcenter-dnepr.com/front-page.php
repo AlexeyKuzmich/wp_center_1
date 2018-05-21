@@ -46,23 +46,48 @@
 <section class="headPhysician coloredSection">
   <div class="container">
     <div class="row">
-      <h1><?php echo get_cat_name(7); ?></h1>
 
-      <?php if ( have_posts() ) : query_posts('p=97');
-      while (have_posts()) : the_post(); ?>
-      <div class="col-sm-5">
-        <a href="http://perinatalcenter-dnepr.com/head-physician/"><?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?></a>
+      <?php if( have_posts() ) : query_posts( 'p=218' );
+      while( have_posts() ) : the_post(); ?>
+
+      <h1><?php echo get_post_meta( 218, 'appeal', true ); ?></h1>
+      <div class="col-sm-4">
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'large', array('class' => 'img-responsive') ); ?></a>
       </div>
-      <div class="col-sm-7">
-        <?php the_content(); ?>
-        <h3 class="text-right"><a href="http://perinatalcenter-dnepr.com/head-physician/"><?php echo get_post_meta( 97, 'p_signature', true ); ?></a></h3>
+      <div class="col-sm-8">
+        <p><?php echo get_post_meta( 218, 'appeal_content', true ); ?></p>
+        <h3 class="text-right"><a href="<?php the_permalink(); ?>"><?php echo get_post_meta( 218, 'p_signature', true ); ?></a></h3>
       </div>
+
       <?php endwhile; endif; wp_reset_query(); ?>
 
     </div>
   </div>
 </section>
 <!--/ headPhysician -->
+
+<!-- owlcarousel -->
+<section>
+  <div class="container">
+    <h1>Керівництво закладом та завідувачі відділеннями</h1>
+    <div class="owl-carousel owl-doctors grabbable">
+
+      <?php if ( have_posts() ) : query_posts( 'cat=8' );
+      while (have_posts()) : the_post(); ?>
+
+      <div class="item">
+        <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
+        <h3><?php the_title(); ?></h3>
+        <p><?php echo get_post_meta( $post->ID, 'position', true ); ?></p>
+        <a href="<?php the_permalink(); ?>">Докладнiше</a>
+      </div>
+
+      <?php endwhile; endif; wp_reset_query(); ?>
+
+    </div>
+  </div>
+</section>
+<!-- / owlcarousel -->
 
 <!-- parallax -->
 <div class="parallax-window">
@@ -97,11 +122,14 @@
 <section class="descriptionText">
   <div class="container">
 
-    <h1><?php echo get_cat_name(6); ?></h1>
-    <div>
-      <p><?php echo category_description(6); ?></p>
-      <button>Розгорнути</button>
-    </div>
+    <?php if ( have_posts() ) : query_posts( 'p=212' );
+      while ( have_posts() ) : the_post(); ?>
+        <h1><?php the_title(); ?></h1>
+        <div>
+          <p><?php the_content(); ?></p>
+          <button>Розгорнути</button>
+        </div>
+      <?php endwhile; endif; wp_reset_query(); ?>
 
   </div>
 </section>

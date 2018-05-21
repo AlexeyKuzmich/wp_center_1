@@ -34,7 +34,7 @@ Template Name: Страница отделения
         <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
         <h3><?php the_title(); ?></h3>
         <p><?php echo get_post_meta( $post->ID, 'position', true ); ?></p>
-        <a href="<?php echo get_post_meta( $post->ID, 'page_link', true ); ?>">Докладнiше</a>
+        <a href="<?php the_permalink(); ?>">Докладнiше</a>
       </div>
 
       <?php endwhile; endif; wp_reset_query(); ?>
@@ -43,7 +43,6 @@ Template Name: Страница отделения
   </div>
 </section>
 <!-- / owlcarousel -->
-
 
 <?php while( have_posts() ) : the_post(); ?>
 

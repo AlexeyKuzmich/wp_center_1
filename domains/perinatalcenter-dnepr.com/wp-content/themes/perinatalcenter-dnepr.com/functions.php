@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'style_script_load' );
 
 
 // админпанель
-show_admin_bar(false);
+show_admin_bar( false );
 
 // регистрация миниатюр для всех типов постов
 add_theme_support( 'post-thumbnails' );
@@ -61,14 +61,22 @@ function p_sidebars_register() {
 }
 add_action( 'widgets_init', 'p_sidebars_register' );
 
-// Пписк по категории
-function searchcategory($query) {
-	if ($query->is_search) {
-		$query->set(category__in, array(12,13));
+// Исключение из поиска категорий
+function mysearchexclude( $query ){
+	if ( $query->is_search ){
+		$query->set( 'category__not_in','1' );
 	}
 	return $query;
 }
-add_filter('pre_get_posts','searchcategory');
+add_filter( 'pre_get_posts','mysearchexclude' );
+
+function wph_exclude_pages($query) {
+    if ($query->is_search) {
+        $query->set('post_type', 'post');
+    }
+    return $query;
+}
+add_filter('pre_get_posts','wph_exclude_pages');
 
 ## Функция для подсветки слов поиска в WordPress
 add_filter('the_content', 'kama_search_backlight');
@@ -163,3 +171,7 @@ unset($fields['url']);
 return $fields; 
 } 
 add_filter('comment_form_default_fields', 'remove_comment_fields');
+
+
+
+
