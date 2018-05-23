@@ -9,8 +9,6 @@
 
 <section class="person">
 
-  <h1 style="color: red;">Пост доктора</h1>
-
   <h1><?php echo get_post_meta( $post->ID, 'department', true ); ?></h1>
   <div class="container">
     <div class="row">

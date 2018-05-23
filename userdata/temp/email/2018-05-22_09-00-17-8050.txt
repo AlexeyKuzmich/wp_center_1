@@ -1,0 +1,25 @@
+To: tagoperato@gmail.com
+Subject: =?UTF-8?B?W9CU0L3QtdC/0YDQvtC/0LXRgtGA0L7QstGB0LrQuNC5INCf0LXRgNC40L0=?=  =?UTF-8?B?0LDRgtCw0LvRjNC90YvQuSDQptC10L3RgtGAXSDQmtC+0LzQtdC90YLQsNGA?=  =?UTF-8?B?OiAi0J3QvtCy0LDRjyDQt9Cw0L/QuNGB0Ywi?=
+X-PHP-Originating-Script: 0:class-phpmailer.php
+Date: Tue, 22 May 2018 06:00:17 +0000
+From: Alex <wordpress@perinatalcenter-dnepr.com>
+Reply-To: "\"tagoperator@gmail.com\"" <tagoperator@gmail.com>
+Message-ID: <ed73d4cc5405a9be180f8aa4d0399ac9@perinatalcenter-dnepr.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Новий коментар до вашого запису "Новая запись"
+Автор: Alex (IP адреса: 127.0.0.1, admin)
+Email: tagoperator@gmail.com
+URL: 
+Коментар: 
+no-logged comment done by Alex
+
+Ви можете бачити всі коментарі до цього запису тут:
+http://perinatalcenter-dnepr.com/novaya-zapis/#comments
+
+Постійне посилання: http://perinatalcenter-dnepr.com/novaya-zapis/#comment-10
+В кошик: http://perinatalcenter-dnepr.com/wp-admin/comment.php?action=trash&c=10#wpbody-content
+Спам: http://perinatalcenter-dnepr.com/wp-admin/comment.php?action=spam&c=10#wpbody-content

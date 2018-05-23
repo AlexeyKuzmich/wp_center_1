@@ -70,13 +70,13 @@ function mysearchexclude( $query ){
 }
 add_filter( 'pre_get_posts','mysearchexclude' );
 
-function wph_exclude_pages($query) {
+/*function wph_exclude_pages($query) {
     if ($query->is_search) {
         $query->set('post_type', 'post');
     }
     return $query;
 }
-add_filter('pre_get_posts','wph_exclude_pages');
+add_filter('pre_get_posts','wph_exclude_pages');*/
 
 ## Функция для подсветки слов поиска в WordPress
 add_filter('the_content', 'kama_search_backlight');

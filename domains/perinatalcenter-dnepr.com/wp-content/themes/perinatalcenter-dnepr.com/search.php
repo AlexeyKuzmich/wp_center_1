@@ -24,7 +24,7 @@
         </div>
 
         <?php if ( have_posts() ) : 
-        while (have_posts()) : the_post(); ?>
+        while( have_posts() ) : the_post(); ?>
 
           <div class="row category_item">
 
@@ -33,7 +33,7 @@
               </div>
 
             <div class="col-sm-4 col-md-4">
-              <?php if ( has_post_thumbnail()) { ?>
+              <?php if ( has_post_thumbnail() ) { ?>
                 <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?></a>
               <?php } ?>
             </div>
@@ -66,7 +66,7 @@
           </div>
         <?php endif; ?>
 
-        <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); }
+        <?php if( function_exists('wp_pagenavi') ) { wp_pagenavi(); }
         $wp_query = null; $wp_query = $temp; ?>
 
       </section>

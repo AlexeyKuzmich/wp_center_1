@@ -69,11 +69,13 @@
 <!-- owlcarousel -->
 <section>
   <div class="container">
-    <h1>Керівництво закладом та завідувачі відділеннями</h1>
-    <div class="owl-carousel owl-doctors grabbable">
-
+        <h1><?php echo get_cat_name(8);?> </h1>
+<div class="owl-carousel owl-doctors grabbable">
       <?php if ( have_posts() ) : query_posts( 'cat=8' );
       while (have_posts()) : the_post(); ?>
+
+
+    
 
       <div class="item">
         <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>

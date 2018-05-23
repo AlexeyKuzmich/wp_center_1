@@ -10,106 +10,106 @@ Version: 1.0 */
 font: 14px/18px Verdana, sans-serif;
 } */
 code, kbd, pre, samp, tt, var {
-font: 14px/18px Consolas, "Courier New", monospace;
+  font: 14px/18px Consolas, "Courier New", monospace;
 }
 body, optgroup {
-color: #000;
-background: #fff;
+  color: #000;
+  background: #fff;
 }
 body, code, dl, dd, form, pre {
-margin: 0;
+  margin: 0;
 }
 a:link {
-color: #009;
+  color: #009;
 }
 a:link, a:visited, ins {
-text-decoration: none;
+  text-decoration: none;
 }
 a:visited {
-color: #505;
+  color: #505;
 }
 a:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
 a:link img, a:visited img, object, fieldset, abbr, acronym {
-border: none;
+  border: none;
 }
 sub, sup {
-position: relative;
-display: inline-block;
-font-size: 11px;
-line-height: 11px;
+  position: relative;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 11px;
 }
 sub {
-top: 5px;
-vertical-align: middle;
+  top: 5px;
+  vertical-align: middle;
 }
 sup {
-top: -2px;
-margin-top: -11px;
+  top: -2px;
+  margin-top: -11px;
 }
 abbr, acronym {
-cursor: help;
-border-bottom: 1px dotted #999;
+  cursor: help;
+  border-bottom: 1px dotted #999;
 }
 address, cite, dfn {
-font-style: normal;
+  font-style: normal;
 }
 code, pre {
-white-space: pre-wrap;
+  white-space: pre-wrap;
 }
 img {
-vertical-align: bottom;
+  vertical-align: bottom;
 }
 td, th, textarea {
-vertical-align: top;
+  vertical-align: top;
 }
 input, select, button {
-overflow: visible;
-vertical-align: middle;
+  overflow: visible;
+  vertical-align: middle;
 }
 legend {
-color: #000;
-margin: 0 0 -2px;
-padding: 0;
+  color: #000;
+  margin: 0 0 -2px;
+  padding: 0;
 }
 li {
-display: block;
-list-style: none;
+  display: block;
+  list-style: none;
 }
 optgroup option {
-padding-left: 22px;
+  padding-left: 22px;
 }
 table {
-border-collapse: collapse;
+  border-collapse: collapse;
 }
 caption, th {
-text-align: left;
+  text-align: left;
 }
 td, th {
-padding: 0;
+  padding: 0;
 }
 address, blockquote, h1, h2, h3, h4, h5, h6, fieldset, p, ol, ul {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 th, h1, h2, h3, h4, h5, h6 {
-font-weight: normal;
+  font-weight: normal;
 }
 q {
-quotes: "\00ab" "\00bb" "\201e" "\201c";
+  quotes: "\00ab" "\00bb" "\201e" "\201c";
 }
 q:after {
-content: "\00bb";
+  content: "\00bb";
 }
 q:before {
-content: "\00ab";
+  content: "\00ab";
 }
 q > q:after {
-content: "\201c";
+  content: "\201c";
 }
 q > q:before {
-content: "\201e";
+  content: "\201e";
 }
 /* / reset.css */
 
@@ -121,17 +121,6 @@ html, body {
   box-sizing: border-box;
 }
 
-/* .test { 
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 60000;
-  background-color: red;
-} */
-
 body,
 h1,
 h2,
@@ -142,9 +131,6 @@ h6 {
   position: relative;
   font: 16px/1.8 GothamPro Regular, sans-serif;
   font-weight: normal;
-  /* font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.5; */
   color: #626877;
   letter-spacing: 2px;
 }
@@ -350,6 +336,8 @@ header {
   right: 7px;
   font-size: 25px;
   cursor: pointer;
+  -webkit-transform-origin: 50% 48% 0;
+          transform-origin: 50% 48% 0;
   transition: .3s;
 }
 
@@ -717,18 +705,20 @@ nav .nav .menu a:focus {
   padding: 5px 10px;
   width: 100%;
   color: #fff;
-  background: rgba(68, 108, 179, .8);
+  background: linear-gradient(0deg, #446CB3, #52B3D9);
+  border: 1px solid #446CB3;
+  border-radius: 4px;
   text-align: center;
   transition: .3s;
 }
 
 .owl-doctors a:hover {
-  background: rgba(68, 108, 179, 1);
+  background: linear-gradient(180deg, #446CB3, #52B3D9);
 }
 
-.owl-doctors a:hover:active {
+/* .owl-doctors a:hover:active {
   background: #7FC560;
-}
+} */
 /*************** / OWLCARUSEL ***************/
 
 
@@ -812,8 +802,9 @@ nav .nav .menu a:focus {
   padding: 5px 10px;
   margin: 0 auto;
   width: 100%;
-  background-color: rgba(68, 108, 179, 1);
-  border: none;
+  background: linear-gradient(0deg, #446CB3, #52B3D9);
+  border: 1px solid #446CB3;
+  border-radius: 4px;
   color: #fff;
   text-align: center;
   transition: .3s;
@@ -823,14 +814,14 @@ nav .nav .menu a:focus {
 .descriptionText button:hover,
 .feedback input[type="submit"]:hover,
 .more-link:hover {
-  background-color: rgba(68, 108, 179, .8);
+  background: linear-gradient(180deg, #446CB3, #52B3D9);
 }
 
-.descriptionText button:active,
+/* .descriptionText button:active,
 .feedback input[type="submit"]:active,
 .more-link:active {
   background-color: #249578;
-}
+} */
 /*************** / descriptionText ***************/
 
 
@@ -1352,9 +1343,14 @@ footer p:last-child {
 }
 
 .category_item a.more-link {
-
-  display: block;
+  background: linear-gradient(0deg, #446CB3, #52B3D9);
+  border: 1px solid #446CB3;
+  border-radius: 4px;
   color: #fff;
+}
+
+.category_item a.more-link:hover {
+  background: linear-gradient(180deg, #446CB3, #52B3D9);
 }
 
 .category_item .tags {
@@ -1392,7 +1388,7 @@ footer p:last-child {
 .prev_next_posts .next_post {
   float: right;
   text-align: right;
-  width: 48%;
+  width: 47%;
 }
 
 .prev_next_posts .prev_post p,
@@ -1439,7 +1435,8 @@ h2.tag_page {
 .sidebar .tag-cloud-link,
 .category_item .tags a {
   font-size: 11px;
-  background-color: #446CB3;
+  background: #52B3D9;
+  background: linear-gradient(0deg, #446CB3, #52B3D9);
   border-radius: 0 2px 2px 0;
   color: #fff;
   display: inline-block;
@@ -1460,7 +1457,7 @@ h2.tag_page {
   width: 0;
   border-top: 10px solid transparent;
   border-right: 8px solid #446CB3;
-  border-bottom: 11px solid transparent;
+  border-bottom: 10px solid transparent;
 }
 
 .sidebar .tag-cloud-link:after,
@@ -1477,7 +1474,7 @@ h2.tag_page {
 
 .sidebar .tag-cloud-link:hover,
 .category_item .tags a:hover {
-  color: #7FC560;
+  background: linear-gradient(180deg, #446CB3, #52B3D9);
 }
 
 .sidebar  li {
@@ -1612,15 +1609,14 @@ h3#comments-title {
  
 .reply a {
   font-size: 12px;
-  background: #446CB3;
+  background: linear-gradient(0deg, #446CB3, #52B3D9);
   color: #fff;
-  padding: 1px 9px;
+  padding: 3px 5px;
   transition: all .3s;
-  font-family: "OpenSansBold", sans-serif;
 }
  
 .reply a:hover {
-  opacity: .5;
+  background: linear-gradient(180deg, #446CB3, #52B3D9);
 }
  
 a.comment-edit-link {
@@ -1892,15 +1888,15 @@ textarea:focus:required:valid {
   width: auto;
   font-family: "OpenSansBold", sans-serif;
   padding: 0 18px;
-  background: #446CB3;
-  color: #fff;
-  border-radius: 4px;
+  background: linear-gradient(0deg, #446CB3, #52B3D9);
   border: 1px solid #446CB3;
+  border-radius: 4px;
+  color: #fff;
   margin-top: 10px;
 }
  
 #respond .form-submit input:hover {
-  opacity: .5;
+  background: linear-gradient(180deg, #446CB3, #52B3D9);
   transition: all .3s;
 }
 
