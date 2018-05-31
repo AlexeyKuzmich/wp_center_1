@@ -1,0 +1,20 @@
+To: tagoperato@gmail.com
+Subject: =?UTF-8?B?0JTQvdC10L/RgNC+0L/QtdGC0YDQvtCy0YHQutC40Lkg0J/QtdGA0LjQvdCw?=  =?UTF-8?B?0YLQsNC70YzQvdGL0Lkg0KbQtdC90YLRgCAiIg==?=
+X-PHP-Originating-Script: 0:class-phpmailer.php
+Date: Thu, 31 May 2018 08:01:26 +0000
+From: sdfasd <wordpress@perinatalcenter-dnepr.com>
+Reply-To: asdfasdf@df.hj
+Message-ID: <3e0db2ffef4a73d399608be5506f04f8@perinatalcenter-dnepr.com>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+From: sdfasd <asdfasdf@df.hj>
+Subject: 
+
+Message Body:
+[your-message]
+
+-- 
+This e-mail was sent from a contact form on Днепропетровский Перинатальный Центр (http://perinatalcenter-dnepr.com)

@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-md-9">
       <section>
-        <h1>INDEX</h1>        
+        <h1>INDEX</h1>
 
         <?php
         $temp = $wp_query;
@@ -18,7 +18,7 @@
           <?php comments_popup_link('0', '1', '%'); ?>
           <br />
           <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(array(250, 250)); ?></a>
-          <?php the_content('Читать далее...'); ?> 
+          <?php the_content('Читать далее...'); ?>
 
         <?php endwhile;
         if(function_exists('wp_pagenavi')) { wp_pagenavi(); }

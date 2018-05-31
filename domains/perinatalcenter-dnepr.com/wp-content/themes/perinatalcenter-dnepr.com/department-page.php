@@ -12,7 +12,7 @@ Template Name: Страница отделения
   <div class="container">
     <div class="row">
       <h1><?php the_title(); ?></h1>
-      <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
+      <?php the_post_thumbnail('large', array( 'class' => 'img-responsive') ); ?>
     </div>
   </div>
 </section>
@@ -27,11 +27,11 @@ Template Name: Страница отделения
     <h1>ДОКТОРА ВІДДІЛЕННЯ</h1>
     <div class="owl-carousel owl-doctors grabbable">
 
-      <?php if ( have_posts() ) : query_posts( $category );
+      <?php if (have_posts()) : query_posts( $category );
       while (have_posts()) : the_post(); ?>
 
       <div class="item">
-        <?php the_post_thumbnail('large', array('class' => 'img-responsive')); ?>
+        <?php the_post_thumbnail( 'large', array('class' => 'img-responsive') ); ?>
         <h3><?php the_title(); ?></h3>
         <p><?php echo get_post_meta( $post->ID, 'position', true ); ?></p>
         <a href="<?php the_permalink(); ?>">Докладнiше</a>
