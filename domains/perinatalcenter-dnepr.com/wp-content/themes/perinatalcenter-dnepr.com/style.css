@@ -817,13 +817,11 @@ nav .nav .menu a:focus {
   background: linear-gradient(180deg, #446CB3, #52B3D9);
 }
 
-/* .descriptionText button:active,
-.feedback input[type="submit"]:active,
-.more-link:active {
-  background-color: #249578;
-} */
+.descriptionText p {
+  margin-top: 20px;
+  text-align: justify;
+}
 /*************** / descriptionText ***************/
-
 
 
 

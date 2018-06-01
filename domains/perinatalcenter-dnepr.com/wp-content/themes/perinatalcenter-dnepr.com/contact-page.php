@@ -17,14 +17,13 @@ Template Name: Страница контактов
 		  {
 		  	$department_id = $arr_departments[$i];
 				$post_id = get_post( $department_id );
-				$page_title = $post_id->post_title;
 			?>
 
       <div class="col-sm-6 col-md-6 col-lg-4 item">
         <a href="<?php echo get_page_link( $post_id ); ?>">
         	
           <div class="inner">
-          	<h2 class="text-left"><?php echo $page_title; ?></h2>
+          	<h2 class="text-left"><?php echo $post_id->post_title; ?></h2>
 
 						<p><span class="glyphicon glyphicon-home"></span><?php echo get_post_meta( $department_id, 'local_address', true ); ?></p>
             <p><span class="glyphicon glyphicon-phone"></span><?php echo get_post_meta( $department_id, 'mobile_1', true ); ?></p>

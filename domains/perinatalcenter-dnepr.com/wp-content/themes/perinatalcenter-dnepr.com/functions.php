@@ -15,7 +15,8 @@ function style_script_load() {
 }
 add_action( 'wp_enqueue_scripts', 'style_script_load' );
 
-
+// очистка корзины
+define( 'EMPTY_TRASH_DAYS', 10 ); 
 
 // админпанель
 show_admin_bar( false );

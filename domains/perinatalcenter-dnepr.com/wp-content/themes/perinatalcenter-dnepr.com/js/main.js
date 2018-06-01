@@ -42,27 +42,23 @@ jQuery(document).ready(function($) {
     });
 
     $(".nav li").off('mouseenter mouseleave');
-    $(".nav li a.parent")
-    .off('click')
-    .on('click', function(e) {
+    $(".nav li a.parent").off('click')
+                          .on('click', function(e) {
       // Необходимоо привязать к элементу ссылки для предотвращения "всплывания"
       e.preventDefault();
 
-      $(this)
-      .parent("li")
-      .toggleClass("hover");
+      $(this).parent("li")
+              .toggleClass("hover");
     });
 
     $directionItem.each(function() { // equal height of .direction
-      $(this)
-      .removeClass("largeScreen")
-      .removeAttr("style");
+      $(this).removeClass("largeScreen")
+              .removeAttr("style");
     });
 
     $scheduleInner.each(function() { // equal height of .schedule
-      $(this)
-      .removeClass("largeScreen")
-      .removeAttr("style");
+      $(this).removeClass("largeScreen")
+              .removeAttr("style");
     });
 
   } else if ( ww >= 751 ) { // = 768 - 17 (verticasl scroll width)
@@ -77,15 +73,13 @@ jQuery(document).ready(function($) {
     });
     
     $(".toggleMenu").css("display", "none");
-    $(".nav")
-    .show()
-    .css("display", "block");
+    $(".nav").show()
+              .css("display", "block");
 
     $(".nav li a").off('click');
     $(".nav li")
-    .removeClass("hover")
-    .off('mouseenter mouseleave')
-    .on('mouseenter mouseleave', function() {
+    .removeClass("hover").off('mouseenter mouseleave')
+                          .on('mouseenter mouseleave', function() {
       // Необходимо привязать к элементу li для предотвращения запуска события mouseleave при перемещении курсора мыши над подменю
       $(this).toggleClass('hover');
     });
@@ -136,13 +130,12 @@ jQuery(document).ready(function($) {
 
 
   // preload
-  var preload = 15;
 
   (function () {      
+  var preload = 0;
     $(".greeting").css("opacity", 1);
-    $("#preload")
-    .delay(preload)
-    .fadeOut(preload);
+    $("#preload").delay(preload)
+                  .fadeOut(preload);
   })();
 
 

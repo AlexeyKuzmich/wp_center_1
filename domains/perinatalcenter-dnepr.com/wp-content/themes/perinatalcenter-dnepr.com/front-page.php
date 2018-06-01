@@ -119,21 +119,6 @@
   </div>
 </div>
 
-<!-- <section class="descriptionText">
-  <div class="container">
-
-    <?php if ( have_posts() ) : query_posts( 'p=212' );
-      while ( have_posts() ) : the_post(); ?>
-        <h1><?php the_title(); ?></h1>
-        <div>
-          <p><?php the_content(); ?></p>
-          <button>Розгорнути</button>
-        </div>
-      <?php endwhile; endif; wp_reset_query(); ?>
-
-  </div>
-</section> -->
-
 <section class="feedback coloredSection">
   <div class="container">
     <h1>запис на консультацію</h1>
