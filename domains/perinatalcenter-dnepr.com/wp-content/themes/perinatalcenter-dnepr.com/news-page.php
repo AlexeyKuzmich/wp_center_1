@@ -1,8 +1,9 @@
 <?php
 /*
-Template Name: Cтраница Статей
+Template Name: Cтраница Новостей
 */
 ?>
+
 <?php get_header(); ?>
 
 <div class="container">
@@ -11,27 +12,28 @@ Template Name: Cтраница Статей
       <section>        
         <?php $temp = $wp_query;
         $wp_query= null;
-        $wp_query = new WP_Query('cat=-1,-5,-6,-7,-8,-10,-11,-13&paged=' . $paged);
+        $wp_query = new WP_Query('cat=-1,-5,-6,-7,-8,-10,-11,-12&paged=' . $paged);
         while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
           <div class="row category_item">
 
-            <div class="col-xs-12">
+              <div class="col-xs-12">
                 <h2 class="text-left"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
               </div>
 
-            <div class="col-sm-4 col-md-4">
+            <div class="col-sm-2 col-md-2">
               <?php if ( has_post_thumbnail()) { ?>
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?></a>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?></a>
               <?php } else { ?>
                 <a href="<?php the_permalink(); ?>">
-                  <img class="img-responsive text-left" src="<?php bloginfo('template_url'); ?>/images/no_image.jpg" alt="no_image" width="300" height="300" />
+                  <img class="img-responsive text-left" src="<?php bloginfo('template_url'); ?>/images/no_image.jpg" alt="no_image" width="150" height="150" />
                 </a>
               <?php } ?>
             </div>
 
-            <div class="col-sm-8 col-md-8 pull-right">
+            <div class="col-sm-10 col-md-10">
               <div class="blog-info clearfix">
+                
                 <div class="author_field">
                   <p class="author">
                     <?php the_author(); ?>
@@ -40,14 +42,13 @@ Template Name: Cтраница Статей
                   <p class="comment"><?php comments_popup_link('0', '1', '%'); ?></p>
                 </div>
               </div>              
-              <div class="read-more"><?php the_content('Дiзнатись бiльше...'); ?></div>
-            </div>            
+              <a href="<?php the_permalink(); ?>"><?php the_excerpt(); ?></a>
+            </div>
 
           </div>
 
-        <?php endwhile; ?>
-        
-        <?php if (function_exists('wp_pagenavi')) { wp_pagenavi(); }
+        <?php endwhile;
+        if (function_exists('wp_pagenavi')) { wp_pagenavi(); }
         $wp_query = null; $wp_query = $temp; ?>
 
       </section>
