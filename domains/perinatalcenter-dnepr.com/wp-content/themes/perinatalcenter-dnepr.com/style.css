@@ -164,6 +164,36 @@ h3 {
   letter-spacing: 1.2px;
 }
 
+h4 {
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.1em;
+  color: #499FFF;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+h5 {
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 1em;
+  color: #499FFF;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+h6 {
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.3;
+  font-size: 0.9em;
+  color: #499FFF;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 p {
   margin: 0 0 10px;
   text-align: left;
@@ -614,6 +644,7 @@ nav .nav .menu a:focus {
 /*************** headPhysician ***************/
 .headPhysician img {
   width: 100%;
+  max-width: 330px;
   height: auto;
   margin-bottom: 30px;
   box-shadow: 1px 1px 12px 0px #4A9FFF;
@@ -779,19 +810,23 @@ nav .nav .menu a:focus {
 
 /*************** descriptionText ***************/
 .descriptionText ul,
-.personDescription ul {
+.personDescription ul,
+.descriptionText ol,
+.personDescription ol {
   margin: 10px 30px;
 }
 
 .descriptionText ul li,
-.personDescription ul li {
+.personDescription ul li,
+.descriptionText ol li,
+.personDescription ol li {
   margin-bottom: 5px;
   line-height: 120%;
 }
 
 .descriptionText ul li:before,
 .personDescription ul  li:before {
-  content: "\27A4 \00A0";
+  content: "\2714 \00A0";
   color: #499FFF;
 }
 
@@ -845,28 +880,8 @@ nav .nav .menu a:focus {
 
 .deparmentContacts a {
   padding-right: 10px;
+  font-size: 120%;
 }
-
-.deparmentContacts a img {
-  vertical-align: text-bottom;
-}
-
-/* .deparmentContacts .facebook {
-  display: block;
-  background: url('images/facebook_16x16.png') no-repeat left center;
-} */
-
-/* .deparmentContacts a svg {
-  width: 20px;
-  height: 20px;
-  border: 2px solid #499FFF;
-  border-radius: 4px;
-  padding: 2px;
-  fill: #499FFF;
-  transition: .3s;
-  margin-right: 10px;
-  vertical-align: text-bottom;
-} */
 
 .deparmentContacts p {
   color: #446CB3;
@@ -885,12 +900,9 @@ nav .nav .menu a:focus {
   color: #499FFF;
 }
 
-.deparmentContacts .socials {
-  margin-top: 30px;
-}
-
-.deparmentContacts .socials {
-  margin-top: 30px;
+.deparmentContacts h3,
+.deparmentContacts .phones {
+  margin-bottom: 30px;
 }
 
 .deparmentContacts .socials div {
@@ -898,8 +910,8 @@ nav .nav .menu a:focus {
 }
 
 .deparmentContacts .socials img {
-  -webkit-transform-origin: left bottom;
-          transform-origin: left bottom;
+  width: 60px;
+  height: auto;
   transition: .3s;
 }
 
@@ -938,13 +950,13 @@ nav .nav .menu a:focus {
   height: 100%;
   padding: 5px 0;
   border: 1px solid transparent;
-  border-bottom: 1px solid #7fc560;
+  border-bottom: 1px solid #ccc;
   outline: none;
   text-align: center;
   background-color: transparent;
   transition: all .3s;
   font-size: 1.2em;
-  color: #499FFF;
+  color: #ccc;
   text-transform: uppercase;
 }
 
@@ -965,25 +977,32 @@ nav .nav .menu a:focus {
 .feedback textarea {
   padding: 10px;
   width: 100%;
-  background: #fff;
   font-size: 1.2em;
   color: #499FFF;
-  border: none;
-  box-shadow: 0 0 4em 4em lightcyan inset;
+  border-color: #ccc;
+  background: transparent;
   outline: none;
+  transition: .3s;
+}
+
+.feedback textarea:hover,
+.feedback textarea:focus {
+  border-color: transparent;
+  background: #fff;
+  box-shadow: 0 0 4em 4em lightcyan inset;
 }
 
 .feedback textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #499FFF;
+  color: #ccc;
 }
 .feedback textarea::-moz-placeholder { /* Firefox 19+ */
-  color: #499FFF;
+  color: #ccc;
 }
 .feedback textarea:-ms-input-placeholder { /* IE 10+ */
-  color: #499FFF;
+  color: #ccc;
 }
 .feedback textarea:-moz-placeholder { /* Firefox 18- */
-  color: #499FFF;
+  color: #ccc;
 }
 
 .feedback input[type="submit"] {
@@ -1299,6 +1318,10 @@ footer p:last-child {
   text-align: left;
 }
 
+.personDescription h2 {
+  text-align: left;
+}
+
 .personDescription p {
   font-size: 18px;
   line-height: 120%;
@@ -1326,18 +1349,58 @@ footer p:last-child {
 
 
 /*************** WORDPRESS STYLES **************************************/
-.category_item img,
-.category_item p:last-child {
+.category_item img {
   margin-bottom: 20px;
 }
 
-.category_item p img {
+.category_item img.alignleft {
+  width: 50%;
+  height: auto;
+  float: left;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.category_item img.alignright {
+  width: 50%;
+  height: auto;
+  float: right;
+  text-align: right;
+  margin-left: 20px;
+}
+
+.category_item img.aligncenter {
+  display: block;
+  width: 50%;
+  height: auto;
+  float: none;
+  margin: 0 auto;
+}
+
+.category_item img.alignnone {
   width: 100%;
   height: auto;
+  float: none;
 }
 
 .category_item h2 {
-  background-color: #fafafa;
+  margin: 30px 0 0 0;
+}
+
+.category_item h1,
+.category_item h2,
+.category_item h3,
+.category_item h4,
+.category_item h5,
+.category_item h6 {
+  text-align: left;
+}
+
+.category_item p {
+  line-height: 120%;
+}
+
+.category_item:first-child h2 {
   margin: 0;
 }
 
@@ -1360,6 +1423,7 @@ footer p:last-child {
 
 .category_item p {
   text-align: justify;
+  line-height: 130%;
 }
 
 .wp-pagenavi {
@@ -2160,10 +2224,6 @@ textarea:focus:required:valid {
   .person .persontext {
     padding: 2em 1em;
   }
-  .descriptionText ul,
-  .personDescription ul {
-    margin: 10px 0;
-  }
 
   .side_bar {
     display: none;
@@ -2184,6 +2244,13 @@ textarea:focus:required:valid {
   }
     .feedback form .row {
     margin-bottom: 0;
+  }
+  
+  .category_item img.alignleft,
+  .category_item img.aligncenter,
+  .category_item img.alignright {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 

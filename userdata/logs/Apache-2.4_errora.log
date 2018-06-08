@@ -1,13 +1,13 @@
-[Wed Jun 06 10:02:01.501139 2018] [ssl:warn] [pid 8800:tid 520] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:01.502143 2018] [ssl:warn] [pid 8800:tid 520] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:01.671975 2018] [ssl:warn] [pid 8800:tid 520] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:01.672978 2018] [ssl:warn] [pid 8800:tid 520] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:03.389213 2018] [mpm_winnt:notice] [pid 8800:tid 520] AH00455: Apache/2.4.29 (Win32) OpenSSL/1.0.2n configured -- resuming normal operations
-[Wed Jun 06 10:02:03.389213 2018] [mpm_winnt:notice] [pid 8800:tid 520] AH00456: Apache Lounge VC11 Server built: Nov  6 2017 10:38:49
-[Wed Jun 06 10:02:03.389213 2018] [core:notice] [pid 8800:tid 520] AH00094: Command line: 'C:\\ospanel\\modules\\http\\Apache-2.4\\bin\\httpd.exe -d C:/OSPanel/modules/http/Apache-2.4 -f c:\\ospanel\\modules\\http\\Apache-2.4\\conf\\httpd.conf'
-[Wed Jun 06 10:02:03.398568 2018] [mpm_winnt:notice] [pid 8800:tid 520] AH00418: Parent: Created child process 888
-[Wed Jun 06 10:02:03.696348 2018] [ssl:warn] [pid 888:tid 572] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:03.697351 2018] [ssl:warn] [pid 888:tid 572] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:03.800090 2018] [ssl:warn] [pid 888:tid 572] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:03.800090 2018] [ssl:warn] [pid 888:tid 572] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
-[Wed Jun 06 10:02:03.825000 2018] [mpm_winnt:notice] [pid 888:tid 572] AH00354: Child: Starting 32 worker threads.
+[Fri Jun 08 10:27:30.124731 2018] [ssl:warn] [pid 4764:tid 640] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:30.125711 2018] [ssl:warn] [pid 4764:tid 640] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:30.323644 2018] [ssl:warn] [pid 4764:tid 640] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:30.323644 2018] [ssl:warn] [pid 4764:tid 640] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:33.097104 2018] [mpm_winnt:notice] [pid 4764:tid 640] AH00455: Apache/2.4.29 (Win32) OpenSSL/1.0.2n configured -- resuming normal operations
+[Fri Jun 08 10:27:33.097104 2018] [mpm_winnt:notice] [pid 4764:tid 640] AH00456: Apache Lounge VC11 Server built: Nov  6 2017 10:38:49
+[Fri Jun 08 10:27:33.097104 2018] [core:notice] [pid 4764:tid 640] AH00094: Command line: 'C:\\ospanel\\modules\\http\\Apache-2.4\\bin\\httpd.exe -d C:/OSPanel/modules/http/Apache-2.4 -f c:\\ospanel\\modules\\http\\Apache-2.4\\conf\\httpd.conf'
+[Fri Jun 08 10:27:33.100098 2018] [mpm_winnt:notice] [pid 4764:tid 640] AH00418: Parent: Created child process 7700
+[Fri Jun 08 10:27:33.575477 2018] [ssl:warn] [pid 7700:tid 232] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:33.576476 2018] [ssl:warn] [pid 7700:tid 232] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:33.691625 2018] [ssl:warn] [pid 7700:tid 232] AH01909: perinatalcenter-dnepr.com:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:33.691625 2018] [ssl:warn] [pid 7700:tid 232] AH01909: default:443:0 server certificate does NOT include an ID which matches the server name
+[Fri Jun 08 10:27:33.710763 2018] [mpm_winnt:notice] [pid 7700:tid 232] AH00354: Child: Starting 32 worker threads.
