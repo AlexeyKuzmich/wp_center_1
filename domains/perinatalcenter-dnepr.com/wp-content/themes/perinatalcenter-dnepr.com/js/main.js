@@ -307,7 +307,7 @@ jQuery(document).ready(function($) {
 
 
 
-  // mixitup
+/*  // mixitup
   (function() {
     var checkMixElem = document.querySelector("#specialistsMix"),
     mixer = "",
@@ -342,7 +342,7 @@ jQuery(document).ready(function($) {
         $(".dark, p, span", this).css("transform", "scale(0)");
       });
     }
-  })();
+  })();*/
 
 
 
